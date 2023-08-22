@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { getPersones, UpdateList } from "../../services/FakePersoneServices";
-import PageNavbar from "../Paging-Navbar";
+import PageNavbar from "../Paging_Navbar/Paging-Navbar";
 import ListGroup from "./ListGroup/ListGroup";
 import { arrayOf } from "prop-types";
 import { getCity } from "../../services/FakePersonCity";

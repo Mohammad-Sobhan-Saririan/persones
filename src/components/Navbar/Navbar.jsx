@@ -9,17 +9,8 @@ class NavBar extends Component {
 
     render() {
         return (
-            // <nav className="navbar navbar-light bg-light">
-            //     <a className="navbar-brand" href="#">
-            //         Liked Person Number : {" "}
-            //         <span className="badge bg-danger">
-            //             {this.props.persones.filter((p) => p.like === true).length}
-            //         </span>
-            //     </a>
-            // </nav>
-
             <nav
-                className="navbar navbar-expand-lg navbar-light bg-light"
+                className="navbar navbar-expand-lg navbar-dark bg-dark "
                 style={{ position: "sticky", top: "0px", zIndex: "1" }}
             >
                 <div className="container-fluid mx-1">

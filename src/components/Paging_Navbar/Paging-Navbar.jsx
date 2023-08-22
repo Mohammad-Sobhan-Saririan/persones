@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
-import "../css/pagination.css";
+import "../../css/pagination.css";
 import PropTypes from "prop-types";
 class PageNavbar extends Component {
     state = {};
