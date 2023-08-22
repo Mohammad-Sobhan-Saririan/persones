@@ -20,7 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
    we have a button for adding new person that navigate us to login page and we should add a valid person to our list.
 ### packeges
 ---
----
-  lodash
-  fontawesome
-  bootstrap
+
+  -lodash
+  -fontawesome
+  -bootstrap
