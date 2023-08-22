@@ -1,0 +1,17 @@
+.navbar {
+    color: rgb(184, 24, 24);
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

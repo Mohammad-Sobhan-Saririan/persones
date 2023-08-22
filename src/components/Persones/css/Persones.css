@@ -1,0 +1,45 @@
+.btn-mybtn {
+    background-color: #7a1729;
+    border: none;
+    color: rgb(240, 235, 235);
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    font-family: 'Georgia';
+    
+}
+
+.btn-tablebtn {
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 5px 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-tablebtn:hover {
+    color: #ba3e50;
+}
+
+.btn-mybtn:hover {
+    font-size: 18px;
+    height: 6%;
+    margin-top: 15px;
+}
+
+
+.form-control:hover {
+    background-color: #dc3545 !important;
+    color: white;
+}

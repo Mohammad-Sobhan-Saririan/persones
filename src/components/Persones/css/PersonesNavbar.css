@@ -1,0 +1,12 @@
+.navbar .d-flex {
+    width: 18vi;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 65vi;
+    align-items: center;
+    position: absolute;
+}
+.form-control#search::placeholder {
+    color: #ffffff !important;
+}
