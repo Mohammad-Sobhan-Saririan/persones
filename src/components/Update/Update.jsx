@@ -23,8 +23,8 @@ class UpdateForm extends Form {
     };
     schema = {
         Id : Joi.number().required().label("id"),
-        Name: Joi.string().required().min(5).label("Name"),
-        Lastname: Joi.string().required().min(5).label("Lastname"),
+        Name: Joi.string().required().label("Name"),
+        Lastname: Joi.string().required().label("Lastname"),
         City: Joi.string().required().label("City"),
         Email: Joi.string().email().required().label("Email"),
         Mobilephone: Joi.string()
