@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import SortDown from "../../SortDown";
-import SortUp from "../../SortUp";
 import Like from "./Like";
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";

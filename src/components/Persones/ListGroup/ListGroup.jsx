@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getCity } from "../../services/FakePersonCity";
+import { getCity } from "../../../services/FakePersonCity";
 class ListGroup extends Component {
     state = {
         city: getCity(),
