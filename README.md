@@ -19,8 +19,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
    In this page we have list group that filtered each person with their **city properties.
    we have a button for adding new person that navigate us to login page and we should add a valid person to our list.
 ### packeges
-
-
+---
+---
   lodash
   fontawesome
   bootstrap
