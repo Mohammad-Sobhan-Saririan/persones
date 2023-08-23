@@ -17,7 +17,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The base of the Project has been implemented in persone Folder. In this folder, we can see a table that has a header for the Properties of each person and we can sort them with click on each property. in the table, we can delete each person & update it and also give a like to each person. we also have a navigation bar that shows the number of persons that we like and also a search bar for searching. On this page, we have a list group that filtered each person with their (city) properties. we have a button for adding a new person that navigates us to the login page and we should add a valid person to our list. we have a pagination that navigates us to each page of our list. we have a button for showing all persons that we have on our list.
 
-
 ## Login
 
 i create components for this project we use class component and also functional component.
@@ -45,10 +44,6 @@ below we see the Person page and the components that we have in this page.
 #### pagination
 
 ![Alt text](./src/images/pagination.jpg)
-
-#### add person
-
-https://github.com/Mohammad-Sobhan-Saririan/persones/assets/101567856/39686084-28e9-473d-b237-a2ba07f1cbeb
 
 #### Full video
 
