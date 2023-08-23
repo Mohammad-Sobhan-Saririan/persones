@@ -26,7 +26,7 @@ class LoginForm extends Form {
         City: Joi.string().required().label("City"),
         Email: Joi.string().email().required().label("Email"),
         Mobilephone: Joi.string()
-            .regex(/^\d{11}$/)
+            .regex(/^(\+98|0)?9\d{9}/)
             .required()
             .label("Mobilephone"),
     };
@@ -36,7 +36,7 @@ class LoginForm extends Form {
         savePersone(this.state.account);
         console.log("Submitted");
         console.log(this.state.account);
-        this.props.navigate('/Persones' , {replace : true});
+        this.props.navigate("/Persones", { replace: true });
     };
     render() {
         return (

@@ -19,9 +19,15 @@ The base of the Project has been implemented in persone Folder. In this folder, 
 
 ## Login
 
-i create components for this project we use class component and also functional component.
-in Login folder i create [form.jsx](./src/components/login/form.jsx) and [input.jsx](./src/components/login/input.jsx) for using them in [login.jsx](./src/components/login/login.jsx) and [update.jsx](./src/components/login/update.jsx) .in form component we create functions for validate our data and also we craete a function for validate our form and handle submit ,change and render input.i extract each input in input component and use it in form component.also i create select component for using it in form component. then in addition to using bootstrap for styling, i use css for styling when hovering over the input and also when the input is invalid. in Login.jsx i place the forms and use the functions that i create in form component.
+I created components for this project we use class components and also functional components. In the Login folder, I create [form](./src/components/login/form.jsx) and [input](./src/components/login/input.jsx) for using them in [login](./src/components/login/login.jsx) and [update](./src/components/login/update.jsx). in form component, we create functions for validating our data and also we create a function for validating our form and handling submit, change, and render input. I extract each input in the input component and use it in the form component. Also, I created a select component for using it in the form component. Then in addition to using Bootstrap for styling, I use CSS for styling when hovering over the input and also when the input is invalid. in [Login](./src/components/login/login.jsx) and [update](./src/components/login/update.jsx), I place the forms and use the functions that I create in the form component.
 
+![Alt text](./src/images/Login.jpg)
+
+## Update
+
+In the update folder, we have [update](./src/components/update/update.jsx) that use functions in [Form](./src/components/Login/form.jsx) and [input](./src/components/Login/input.jsx) for updating our data. in form component, we create functions for validating our data and also we create a function for validating our form and handling submit, change, and render input. I extract each input in the input component and use it in the form component. Also, I created a select component for using it in the form component. Then in addition to using Bootstrap for styling, I use CSS for styling when hovering over the input and also when the input is invalid. in [update](./src/components/update/update.jsx), I place the forms and use the functions that I create in the form component.
+
+![Alt text](./src/images/update.jpg)
 ## Persones
 
 in persones folder we have table ,list group,Navigation bar and pagination component.in List group component we create a list group, show us the cities that we have in our list and we can filter our list with click on each city.in table component we create a table, show us the persons that we have in our list and we can sort them with click on each property of person , also we can delete each person and update it . also give a like to each person .in Navigation bar component we create a navigation bar that show us the number of persons that we like and also a search bar for searching .in pagination component we create a pagination that navigate us to each page of our list.also we have a button for adding a new person that navigates us to the login page and we should add a valid person to our list.
