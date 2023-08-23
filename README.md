@@ -68,8 +68,6 @@ below we see the Person page and the components that we have in this page.
 
 #### add person
 
-![Alt text](./src/videos/add_person.gif)
-
 ### packeges
 
     -lodash
