@@ -68,6 +68,16 @@ below we see the Person page and the components that we have in this page.
 
 #### add person
 
+
+https://github.com/Mohammad-Sobhan-Saririan/persones/assets/101567856/39686084-28e9-473d-b237-a2ba07f1cbeb
+
+#### Full video
+
+
+
+https://github.com/Mohammad-Sobhan-Saririan/persones/assets/101567856/c3c5c593-d475-4b86-b2b2-82108adf8bbe
+
+
 ### packeges
 
     -lodash
