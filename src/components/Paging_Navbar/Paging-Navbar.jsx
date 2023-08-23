@@ -17,8 +17,8 @@ class PageNavbar extends Component {
                         <a
                             class={
                                 currentPage !== 1
-                                    ? "page-link"
-                                    : "page-link disabled"
+                                    ? "page-link bg bg-dark text-white"
+                                    : "page-link disabled bg bg-dark"
                             }
                             onClick={() => {
                                 if (currentPage > 1)
@@ -38,7 +38,11 @@ class PageNavbar extends Component {
                             }
                         >
                             <a
-                                class="page-link"
+                                class={
+                                    page === currentPage
+                                        ? "page-link bg bg-danger border border-danger "
+                                        : "page-link bg bg-dark text-white"
+                                }
                                 onClick={() => onPageChange(page)}
                             >
                                 {page}
@@ -49,8 +53,8 @@ class PageNavbar extends Component {
                         <a
                             class={
                                 currentPage !== Pages
-                                    ? "page-link"
-                                    : "page-link disabled"
+                                    ? "page-link bg bg-dark text-white"
+                                    : "page-link disabled bg bg-dark "
                             }
                             onClick={() => {
                                 if (currentPage < Pages)
