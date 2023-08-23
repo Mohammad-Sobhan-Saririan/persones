@@ -44,13 +44,35 @@ in Login folder i create [form.jsx] and [input.jsx] for using them in [login.jsx
 then in addition to using bootstrap for styling, i use css for styling when hovering over the input and also when the input is invalid.
 in Login.jsx i place the forms and use the functions that i create in form component.
 
-### Persones
+## Persones
 
-in persones folder we have table ,list group,Navigation bar and pagination component.in List group component we create a list group, show us the cities that we have in our list and we can filter our list with click on each city.in table component we create a table, show us the persons that we have in our list and we can sort them with click on each property of person , also we can delete each person and update it . also give a like to each person .in Navigation bar component we create a navigation bar that show us the number of persons that we like and also a search bar for searching .in pagination component we create a pagination that navigate us to each page of our list.
-![Alt text](./src/images/neon.jpg)
+in persones folder we have table ,list group,Navigation bar and pagination component.in List group component we create a list group, show us the cities that we have in our list and we can filter our list with click on each city.in table component we create a table, show us the persons that we have in our list and we can sort them with click on each property of person , also we can delete each person and update it . also give a like to each person .in Navigation bar component we create a navigation bar that show us the number of persons that we like and also a search bar for searching .in pagination component we create a pagination that navigate us to each page of our list.also we have a button for adding a new person that navigates us to the login page and we should add a valid person to our list.
+![Alt text](./src/images/person_page.jpg)
+below we see the Person page and the components that we have in this page.
+
+#### list group
+
+![Alt text](./src/images/list_group.jpg)
+
+#### table
+
+![Alt text](./src/images/table.jpg)
+
+#### navigation bar
+
+![Alt text](./src/images/navbar.jpg)
+
+#### pagination
+
+![Alt text](./src/images/pagination.jpg)
+
+#### add person
+
+![Alt text](./src/videos/add_person.mp4)
 
 ### packeges
 
     -lodash
     -fontawesome
     -bootstrap
+<!-- Update README.md -->
