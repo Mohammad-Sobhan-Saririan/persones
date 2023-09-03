@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../css/Persones.css";
 import "../css/PersonesNavbar.css";
+import PropTypes from "prop-types";
+
 class SearchBar extends Component {
     state = {};
     render() {
@@ -26,4 +28,8 @@ class SearchBar extends Component {
     }
 }
 
+SearchBar.propTypes = {
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+};
 export default SearchBar;

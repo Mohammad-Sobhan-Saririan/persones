@@ -10,6 +10,8 @@ import NavBar from "../Navbar/Navbar";
 import PersonesNavBar from "./Navbar/PersonesNavbar";
 import { Link } from "react-router-dom";
 import "./css/Persones.css";
+import PropTypes from "prop-types";
+
 class Persones extends Component {
     state = {
         persones: this.props.persones,
@@ -138,4 +140,7 @@ class Persones extends Component {
     }
 }
 
+Persones.propTypes = {
+    persones: PropTypes.array.isRequired,
+};
 export default Persones;

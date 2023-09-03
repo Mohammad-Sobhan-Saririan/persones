@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 import SearchBar from "../Persones/Navbar/SearchBar";
+import PropTypes from "prop-types";
 class NavBar extends Component {
     state = {
         persones: this.props.persones,
@@ -31,21 +32,14 @@ class NavBar extends Component {
                     <div
                         className="collapse navbar-collapse"
                         id="navbarNavAltMarkup"
-                    >
-                        {/* <div className="navbar-nav">
-                            <Link
-                                className="nav-link active"
-                                aria-current="page"
-                                to="/Persones"
-                            >
-                                Persones
-                            </Link>
-                        </div> */}
-                    </div>
+                    ></div>
                 </div>
             </nav>
         );
     }
 }
 
+NavBar.propTypes = {
+    persones: PropTypes.array.isRequired,
+};
 export default NavBar;

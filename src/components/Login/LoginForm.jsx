@@ -7,6 +7,7 @@ import SelectInput from "./SelectInput";
 import { savePersone } from "../../services/FakePersoneServices";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import PropTypes from "prop-types";
 import Persones from "../Persones/Persones";
 class LoginForm extends Form {
     state = {
@@ -71,16 +72,10 @@ class LoginForm extends Form {
                     ></Input>
                     <SelectInput
                         name="City"
+                        value={this.state.account.City}
                         Cities={this.state.Cities}
                         onChange={this.handleChange}
                     ></SelectInput>
-                    {/* <Input
-                        name="City"
-                        label="City"
-                        value={this.state.account.City}
-                        onChange={this.handleChange}
-                        error={this.state.errors.City}
-                    ></Input> */}
                     <Input
                         name="Email"
                         label="Email"
@@ -119,11 +114,11 @@ class LoginForm extends Form {
     }
 }
 
-// export default LoginForm;
+LoginForm.propTypes = {
+    navigate: PropTypes.func.isRequired,
+};
+
 export function AltLoginForm(props) {
     let navigate = useNavigate();
     return <LoginForm navigate={navigate} />;
-    // return (
-    //     <div></div>
-    // )
 }

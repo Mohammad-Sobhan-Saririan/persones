@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { getCity } from "../../../services/FakePersonCity";
+import PropTypes from "prop-types";
 class ListGroup extends Component {
     state = {
         city: getCity(),
@@ -34,5 +35,10 @@ class ListGroup extends Component {
         );
     }
 }
+
+ListGroup.propTypes = {
+    currentCity: PropTypes.string.isRequired,
+    onChangeCity: PropTypes.func.isRequired,
+};
 
 export default ListGroup;

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+
 class TableHead extends Component {
     state = {};
     render() {
@@ -7,27 +9,42 @@ class TableHead extends Component {
             <thead>
                 <tr>
                     <th scope="col" className="px-3">
-                        <a className="btn-tablebtn" onClick={() => onSort("id")}>
+                        <a
+                            className="btn-tablebtn"
+                            onClick={() => onSort("id")}
+                        >
                             ID
                         </a>
                     </th>
                     <th scope="col">
-                        <a className="btn-tablebtn" onClick={() => onSort("name")}>
+                        <a
+                            className="btn-tablebtn"
+                            onClick={() => onSort("name")}
+                        >
                             Name
                         </a>
                     </th>
                     <th scope="col">
-                        <a className="btn-tablebtn" onClick={() => onSort("lastName")}>
+                        <a
+                            className="btn-tablebtn"
+                            onClick={() => onSort("lastName")}
+                        >
                             LastName
                         </a>
                     </th>
                     <th scope="col">
-                        <a className="btn-tablebtn" onClick={() => onSort("city")}>
+                        <a
+                            className="btn-tablebtn"
+                            onClick={() => onSort("city")}
+                        >
                             City
                         </a>
                     </th>
                     <th scope="col">
-                        <a className="btn-tablebtn" onClick={() => onSort("email")}>
+                        <a
+                            className="btn-tablebtn"
+                            onClick={() => onSort("email")}
+                        >
                             Email
                         </a>
                     </th>
@@ -48,4 +65,7 @@ class TableHead extends Component {
     }
 }
 
+TableHead.propTypes = {
+    onSort: PropTypes.func.isRequired,
+};
 export default TableHead;

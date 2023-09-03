@@ -7,6 +7,8 @@ import { getCity } from "../../services/FakePersonCity";
 import { useNavigate } from "react-router-dom";
 import SelectInput from "../Login/SelectInput";
 import { useParams } from "react-router-dom";
+import PropTypes from "prop-types";
+
 class UpdateForm extends Form {
     state = {
         Cities: getCity(),
@@ -22,7 +24,7 @@ class UpdateForm extends Form {
         match: this.props.match,
     };
     schema = {
-        Id : Joi.number().required().label("id"),
+        Id: Joi.number().required().label("id"),
         Name: Joi.string().required().label("Name"),
         Lastname: Joi.string().required().label("Lastname"),
         City: Joi.string().required().label("City"),
@@ -78,13 +80,6 @@ class UpdateForm extends Form {
                         Cities={this.state.Cities}
                         onChange={this.handleChange}
                     ></SelectInput>
-                    {/* <Input
-                        name="City"
-                        label="City"
-                        value={this.state.account.City}
-                        onChange={this.handleChange}
-                        error={this.state.errors.City}
-                    ></Input> */}
                     <Input
                         name="Email"
                         label="Email"
@@ -123,7 +118,11 @@ class UpdateForm extends Form {
     }
 }
 
-// export default LoginForm;
+UpdateForm.propTypes = {
+    match: PropTypes.object.isRequired,
+    navigate: PropTypes.func.isRequired,
+};
+
 export function AltUpdateForm(props) {
     let navigate = useNavigate();
     let { id, name, lastname, city, email, mobilephone } = useParams();

@@ -1,5 +1,6 @@
 import { Alert } from "bootstrap";
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "./login.css";
 const Input = ({ name, label, value, onChange, error }) => {
     const alert = document.querySelector(".alert");
@@ -50,4 +51,11 @@ const Input = ({ name, label, value, onChange, error }) => {
     );
 };
 
+Input.propTypes = {
+    name: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    error: PropTypes.string,
+};
 export default Input;

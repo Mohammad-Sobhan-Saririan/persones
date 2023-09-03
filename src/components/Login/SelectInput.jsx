@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 class SelectInput extends Component {
     state = {};
     render() {
@@ -30,7 +31,7 @@ class SelectInput extends Component {
                         display: "flex",
                         justifyContent: "center",
                         textAlign: "center",
-                        margin : "normal"
+                        margin: "normal",
                     }}
                     className="form-control mb-2 mt-1 border border-dark"
                     id={this.props.name}
@@ -50,4 +51,10 @@ class SelectInput extends Component {
     }
 }
 
+SelectInput.propTypes = {
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    Cities: PropTypes.array.isRequired,
+};
 export default SelectInput;

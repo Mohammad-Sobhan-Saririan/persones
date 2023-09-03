@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Like from "./Like";
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";
+import PropTypes from "prop-types";
 
 class PersonesTable extends Component {
     state = {};
@@ -20,5 +21,13 @@ class PersonesTable extends Component {
         );
     }
 }
+
+PersonesTable.propTypes = {
+    list: PropTypes.array.isRequired,
+    onDelete: PropTypes.func.isRequired,
+    onLike: PropTypes.func.isRequired,
+    onSort: PropTypes.func.isRequired,
+    onUpdate: PropTypes.func.isRequired,
+};
 
 export default PersonesTable;

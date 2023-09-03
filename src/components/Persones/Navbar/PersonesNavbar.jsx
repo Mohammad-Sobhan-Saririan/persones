@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 import "../css/PersonesNavbar.css";
+import PropTypes from "prop-types";
 class PersonesNavBar extends Component {
     state = {};
     render() {
@@ -29,5 +30,11 @@ class PersonesNavBar extends Component {
         );
     }
 }
+
+PersonesNavBar.propTypes = {
+    persones: PropTypes.array.isRequired,
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+};
 
 export default PersonesNavBar;

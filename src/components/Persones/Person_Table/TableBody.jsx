@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Like from "./Like";
 import { Link, useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
+
 class TableBody extends Component {
     state = {};
     render() {
@@ -45,5 +47,12 @@ class TableBody extends Component {
         );
     }
 }
+
+TableBody.propTypes = {
+    list: PropTypes.array.isRequired,
+    onDelete: PropTypes.func.isRequired,
+    onLike: PropTypes.func.isRequired,
+    onUpdate: PropTypes.func.isRequired,
+};
 
 export default TableBody;
